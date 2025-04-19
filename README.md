@@ -14,5 +14,5 @@ I'm currently enrolled in "The Complete 2024 Web Development Bootcamp" by Dr. An
 Let's code, build, and grow!
 
 Connect with me:
-LinkedIn: https://www.linkedin.com/in/thirumani-akshitha-87b065261
+LinkedIn: https://www.linkedin.com/in/thirumani-akshitha/
 
