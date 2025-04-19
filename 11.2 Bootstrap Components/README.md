@@ -25,18 +25,7 @@ This folder contains exercises and mini-projects built using Bootstrap 5 compone
 Project Details - A webpage providing an exceptional moving services to customers.
 
 📂 How to View
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Thirumani-Akshitha/Udemy-Complete-Web-Development-Course-Practice-Projects.git
-   ```
-2. Navigate to:
-   ```
-cd Udemy-Complete-Web-Development-Course-Practice-Projects/11.2 Bootstrap Components
-```
-3. Open the HTML files directly in your web browser.
-
-
-- [🔗 View Bootstrap Components Folder](https://github.com/Thirumani-Akshitha/Udemy-Complete-Web-Development-Course-Practice-Projects/tree/main/11.2%20Bootstrap%20Components)
+- Navigate to index.html file and clone for the webpage.
 
 
 🚀 Happy Learning!
