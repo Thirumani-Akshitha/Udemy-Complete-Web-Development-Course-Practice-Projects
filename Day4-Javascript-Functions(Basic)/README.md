@@ -19,55 +19,6 @@ The program moves Karel in a zigzag fashion across 3 rows, placing beepers at sp
 3. beepersLeft() places beepers while Karel moves to the left.
 4. This pattern repeats across three levels to create a simple zigzag of beepers.
 
-📜 Code
-javascript
-/* Code starts from Here */
-
-function main(){
-   beepersRight();
-   goUpTurnLeft();
-   beepersLeft();
-   goUpTurnRight();
-   beepersRight();
-   goUpTurnLeft();
-   beepersLeft();
-   goUpTurnRight();
-   beepersRight();
-}
-
-function goUpTurnRight() {
-   turnRight();
-   move();
-   turnRight();
-}
-
-function goUpTurnLeft() {
-   turnLeft();
-   move();
-   turnLeft();
-}
-
-function beepersRight() {
-   putBeeper();
-   move();
-   move();
-   putBeeper();
-   move();
-   move();
-   putBeeper();  
-}
-
-function beepersLeft() {
-   move();
-   putBeeper();
-   move();
-   move();
-   putBeeper();
-   move();
-}
-
-/* Code Ends Here */
-
 🛠 How to Run
 
 1. Go to the Karel Online IDE.
