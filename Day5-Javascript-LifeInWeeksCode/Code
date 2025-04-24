@@ -1,0 +1,14 @@
+<Here Is The Code>
+
+function lifeInWeeks(age) {
+    
+  var yearsLeft=90-age;  
+  var xDays =  365*yearsLeft;
+  var yWeeks = 52*yearsLeft;
+  var zmonths = 12*yearsLeft;
+  
+  console.log("You have "+xDays+" days, "+yWeeks+" weeks, and "+zmonths+" months left. ");
+  
+}
+function lifeInWeeks(20);
+
