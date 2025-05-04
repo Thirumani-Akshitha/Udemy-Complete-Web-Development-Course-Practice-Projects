@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 box-border">
+
+  <main class="w-full h-screen bg-center bg-cover bg-no-repeat flex items-center justify-center"
+    style="background-image: url('https://img.freepik.com/premium-photo/new-year-2028-celebration-background-with-gold-black-balloons_885800-15011.jpg?semt=ais_hybrid&w=740');">
+
+    <div class="bg-orange-300 rounded-3xl p-6 w-[90%] max-w-lg">
+      <h1 class="text-center font-serif font-bold text-2xl mb-6">Your B'day comes in...</h1>
+
+      <div class="grid grid-cols-3 gap-4 justify-items-center">
+        <div class="bg-amber-700 rounded-lg text-white text-center p-3 w-24">
+          <input id="days" type="text" readonly class="w-full text-3xl font-bold text-center bg-transparent outline-none" value="0">
+          <label>Days</label>
+        </div>
+        <div class="bg-amber-700 rounded-lg text-white text-center p-3 w-24">
+          <input id="hours" type="text" readonly class="w-full text-3xl font-bold text-center bg-transparent outline-none" value="0">
+          <label>Hours</label>
+        </div>
+        <div class="bg-amber-700 rounded-lg text-white text-center p-3 w-24">
+          <input id="seconds" type="text" readonly class="w-full text-3xl font-bold text-center bg-transparent outline-none" value="0">
+          <label>Seconds</label>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
