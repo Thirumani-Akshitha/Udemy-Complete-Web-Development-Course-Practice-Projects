@@ -1,4 +1,4 @@
-# 🎨 Background Color Changer
+# 🎨 Background Color Changer: Day11 of webdev challenge!
 
 A fun mini-project built to practice JavaScript DOM manipulation. This project changes the background color of the webpage to a random color from a predefined list when a button is clicked.
 

@@ -1,4 +1,4 @@
-# 🧮 JavaScript Calculator
+# 🧮 JavaScript Calculator: Day12 of webdev challenge!
 
 A simple yet functional calculator built as a mini-project to practice **JavaScript DOM manipulation**, **event handling**, and **basic UI styling**.
 
