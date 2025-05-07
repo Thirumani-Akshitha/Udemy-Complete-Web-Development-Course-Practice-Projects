@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-400 m-5">
+  <h1 class="font-serif text-5xl text-center text-green-900 mt-7">Rock-Paper-Scissors Game</h1>
+  <div class="flex justify-center gap-5 mt-12">
+    <button class="bg-[url('https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png')] flex h-24 w-24 bg-center bg-cover" data-choice="rock"></button>
+    <button class=" bg-[url('https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/paper.png')] flex h-24 w-24 bg-center bg-cover" data-choice="paper"></button>
+    <button class="  bg-[url('https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/scissors.png')] flex h-24 w-24 bg-center bg-cover" data-choice="scissors"></button>
+  </div>
+  <div class="flex flex-row justify-center gap-7 mt-9 font-bold text-2xl font-serif">
+    <div>
+      <h1>Player</h1>
+      <p  class="text-center mt-2">0</p>
+    </div>
+    <div>
+    <h2>Computer</h2>
+    <p  class="text-center mt-2">0</p>
+    </div>
+  </div>
+  <div class="flex justify-center mt-6">
+    <p id="resultMessage" class="text-3xl font-semibold font-serif text-black"></p>
+  </div>
+  <div class="flex justify-center mt-6">
+    <button id="resetBtn" class="bg-red-600 text-white font-serif font-bold px-4 py-2 rounded-lg hover:bg-red-700 transition">Reset</button>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
