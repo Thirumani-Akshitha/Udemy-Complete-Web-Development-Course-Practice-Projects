@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-[url('https://plus.unsplash.com/premium_photo-1683309563562-aa3cfde9ed10?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9kbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D')] bg-no-repeat bg-cover bg-center flex justify-center items-center">
+ <main>
+  <div class=" bg-pink-700 text-center items-center opacity-75 p-6 w-96 h-60 rounded-2xl z-0">
+  <div class="flex justify-center">
+    <input id="type" type="text" class="rounded-md h-8 w-56 p-2 shadow-md shadow-black" placeholder="Plan your work!">
+    <button onclick="addTask()" class="bg-blue-600 w-12 rounded-md h-8 ml-3 shadow-md shadow-black font-bold text-white hover:bg-opacity-85 hover:translate-y-0.5">Add</button>  
+  </div>
+    <div id="taskList" class=" bg-pink-300 m-auto opacity-75 p-6  w-72 h-36 rounded-2xl mt-3">
+    </div>
+  </div>
+  </main> 
+  <script src="./index.js"></script>
+</body>
+</html>
