@@ -25,6 +25,9 @@ This project is part of my **WebDev challenge** challenge. On **Day 23**, I impl
 - Organizing reusable code in a component structure
 - Debugging React rendering and import/export issues
 
+## 📸 Screenshot
+
+![screenshot](day23.png)  
 
 ---
 
