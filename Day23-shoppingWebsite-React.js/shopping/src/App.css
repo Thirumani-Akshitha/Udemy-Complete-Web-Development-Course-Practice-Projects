@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerSection {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4f0f;
+  
+}
+.left, .center, .right {
+  display: flex;
+  gap: 16px;
+}
+ 
+.search{
+  border-radius: 40px;
+  padding: 2px;
+  padding-left: 6px;
+}
+
+.bannerBox img{
+  width: 100%;
+  height: 250px;
+}
+.bannerSection{
+  margin-top: 2px;
+}
+
+.menImages{
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.menImages img{
+  width: 160px;
+  height: 240px;
+  
+}
+.ladiesbanner{
+  width: 100%;
+  height: 160px;
+}
+.footerbox img{
+  width: 100%;
+  height: 200px;
+}
