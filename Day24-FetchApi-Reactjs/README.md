@@ -59,6 +59,3 @@ This helped me understand how real-time data flows into a React UI.
 
 ---
 
-_This is part of my #WebDev challenge.  
-Let’s connect on [LinkedIn](https://linkedin.com) and check out my code on [GitHub](https://github.com)!_
-
