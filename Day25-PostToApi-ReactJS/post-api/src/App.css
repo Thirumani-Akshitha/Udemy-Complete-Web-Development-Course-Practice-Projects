@@ -1,0 +1,32 @@
+body{
+margin: 10px;
+text-align: center;
+background-color: darksalmon;
+}
+form{
+  margin: 20px;
+  text-align: center;
+}
+label{
+  font-size: x-large;
+  font-weight: 500;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+}
+input{
+  border-width: thick;
+  border: solid;
+  height: 25px;
+  width: 180px;
+  margin-bottom: 5px;
+}
+button{
+  background-color: rgb(24, 160, 24);
+  color: white;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: larger;
+}
