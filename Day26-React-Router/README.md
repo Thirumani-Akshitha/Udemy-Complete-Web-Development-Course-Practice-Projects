@@ -1,6 +1,6 @@
 # 🚀 Day 26 – Navigation Bar with React & React Router
 
-This project is part of my #100DaysOfCode challenge. On Day 26, I built a **functional navigation bar** using **React** and **React Router DOM** to simulate routing between pages in a web application.
+This project is part of my WebDev challenge. On Day 26, I built a **functional navigation bar** using **React** and **React Router DOM** to simulate routing between pages in a web application.
 
 ---
 
