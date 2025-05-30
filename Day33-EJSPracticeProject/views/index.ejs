@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekday Warrior</title>
+</head>
+<body>
+    <h1>List appears based on the current seconds!</h1>
+    <p>Current seconds: 
+        <%= sec %>
+    </p>
+    <%if (sec % 2 === 0){%>
+        <ul>
+          <%  items.forEach((fruit)=>{ %>
+                <li><%=fruit%></li>
+           <% }) %>
+            
+        </ul>
+    <%}
+    else{ %>
+        <p>No items to display</p>
+   <% }%>
+
+   <p>
+     <%- htmlContent %>
+    </p>
+
+    <%- include("footer.ejs")%>
+</body>
+</html>
