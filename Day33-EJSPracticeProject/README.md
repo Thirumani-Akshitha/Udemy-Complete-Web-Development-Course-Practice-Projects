@@ -13,9 +13,6 @@ This is a simple Node.js project using **Express** and **EJS** to render dynamic
 ## 📦 Installation
 
 1. Clone the repository or download the project files.
-2. Install the dependencies:
-
-```bash
-npm install
+2. Install the dependencies: npm install
 3. Run the index.js
 4. Open your browser and go to: http://localhost:3000
