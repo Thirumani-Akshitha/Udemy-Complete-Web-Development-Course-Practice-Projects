@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Pattern Example</title>
+</head>
+<body class="h-screen bg-[url('https://static.vecteezy.com/ti/vetor-gratis/p1/3661985-emojis-em-fundo-amarelo-vetor.jpg')] 
+bg-repeat flex items-center justify-center">
+
+<div class=" bg-black text-white text-center bg-opacity-85 p-4 rounded-lg">
+  <h1 class= text-4xl font-bold text-center">
+    Joke of the day!
+  </h1><br>
+  <% if(result.type==="single"){ %>
+  <p><%= result.joke %></p>
+<% }else if(result.type==="twopart") {%>
+<p class="setup"><%= result.setup %></p>
+<p><%= result.delivery %></p>
+<%} else{ %>
+<p>Joke not found.</p>
+<%  }%>
+</div>
+
+</body>
+</html>
