@@ -21,19 +21,6 @@ A fun and simple web application that fetches random jokes using an **external A
 - **Axios** for API requests  
 - **Tailwind CSS** for styling (CDN version)
 
-## 📁 Project Structure
-CapstoneProject/
-│
-├── views/
-│ └── index.ejs # Main template for joke display
-│
-├── public/
-│ └── (Optional CSS or images)
-│
-├── index.js # Main server file
-├── package.json
-└── README.md
-
 
 ## 🧠 How It Works
 
@@ -52,10 +39,11 @@ node index.js
 
 Then open your browser and go to:
 http://localhost:3000
+```
 
 ## Screenshort
 
-![screenshort](day37.png)
+![screenshort](./day37.png)
 
 ---
 
