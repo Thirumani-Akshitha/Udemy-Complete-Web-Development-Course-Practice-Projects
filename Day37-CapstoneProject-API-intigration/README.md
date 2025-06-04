@@ -32,8 +32,8 @@ A fun and simple web application that fetches random jokes using an **external A
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/capstone-joke-app.git
-cd capstone-joke-app
+git clone https://github.com/Thirumani-Akshitha/Udemy-Complete-Web-Development-Course-Practice-Projects/tree/main/Day37-CapstoneProject-API-intigration
+
 npm install
 node index.js
 
