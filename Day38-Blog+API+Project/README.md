@@ -23,13 +23,11 @@ git clone https://github.com/your-username/Day38-Blog+API+Project.git
 cd blog-api-app
 ```
 
-2. Install Dependencies
+### 2. Install Dependencies
 ```bash
-Copy
-Edit
 npm install
 ```
-3. Run the Servers
+### 3. Run the Servers
 Start API (port 4000)
 type: node index.js
 
@@ -39,20 +37,20 @@ type: node server.js
 Now, visit:
 🔗 http://localhost:3000
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 1. Node.js
 2. Express.js
 3. EJS
 4. Axios
 5. Body-parser
 
-📌 Learnings
+### 📌 Learnings
 1. Created an API from scratch using Express
 2. Connected frontend to backend using Axios
 3. Practiced working with routes, parameters, and forms
 4. Handled HTTP methods: GET, POST, PATCH, DELETE
 
-📈 Future Improvements
+### 📈 Future Improvements
 1. Integrate a database like PostgreSQL or MongoDB
 2. Add validation and error messages
 3. Style the app with Tailwind or Bootstrap
