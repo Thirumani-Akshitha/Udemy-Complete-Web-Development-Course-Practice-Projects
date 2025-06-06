@@ -18,11 +18,6 @@ This is a simple blog application built using **Node.js**, **Express.js**, and *
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/Thirumani-Akshitha/Day38-Blog+API+Project.git
-
-```
-
 ### 2. Install Dependencies
 ```bash
 npm install
