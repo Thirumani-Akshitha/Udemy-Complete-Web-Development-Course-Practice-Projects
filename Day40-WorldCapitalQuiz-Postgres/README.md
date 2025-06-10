@@ -69,5 +69,5 @@ Difficulty levels and timed questions
 
 UI improvements with Tailwind CSS or Bootstrap
 
-Deploy using Render or Railway
+Deploy using Render or Railway.
 
