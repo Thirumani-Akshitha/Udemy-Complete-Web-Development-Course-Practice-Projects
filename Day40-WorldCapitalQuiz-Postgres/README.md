@@ -71,3 +71,6 @@ UI improvements with Tailwind CSS or Bootstrap
 
 Deploy using Render or Railway.
 
+## Follow
+
+follow me on linkedin for more updates.
