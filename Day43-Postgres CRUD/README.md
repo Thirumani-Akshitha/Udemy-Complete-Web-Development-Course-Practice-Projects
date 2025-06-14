@@ -30,28 +30,30 @@ A simple web application to **Create, Read, Update, and Delete** book records, i
 ```bash
 git clone https://github.com/Thirumani-Akshitha/Udemy-Complete-Web-Development-Course-Practice-Projects.git
 cd Udemy-Complete-Web-Development-Course-Practice-Projects/Day43-Postgres\ CRUD
+```
+2. **Install dependencies**
 
-Install dependencies
+```bash
 
-bash
-Copy code
 npm install
-Set up PostgreSQL
+```
+
+3. **Set up PostgreSQL**
 
 Create a database (e.g., bookdb) and a table:
 
-sql
-Copy code
+```sql
+
 CREATE TABLE book_list (
   id SERIAL PRIMARY KEY,
   title TEXT NOT NULL,
   author TEXT NOT NULL,
   other_details JSONB
 );
-Configure DB Connection in index.js
+```
+4. **Configure DB Connection in index.js**
 
-js
-Copy code
+```js
 const db = new pg.Client({
   user: "your_db_user",
   host: "localhost",
@@ -59,10 +61,11 @@ const db = new pg.Client({
   password: "your_password",
   port: 5432
 });
-Start the server
+```
+5. **Start the server**
 
-bash
-Copy code
+```bash
 node index.js
+```
 Visit: http://localhost:3000
 
