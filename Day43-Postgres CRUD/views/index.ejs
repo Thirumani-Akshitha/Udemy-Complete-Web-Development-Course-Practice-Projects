@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <h1>JSON IN POSTGRESQL</h1>
+    <h3>ADD NEW BOOK</h3>
+
+    <% if (data.length > 0) { %>
+        <% data.forEach(book => { %>
+            <p>Title: <%= book.title %></p>
+            <p>Author: <%= book.author %></p>
+
+            <ul class="data-list">
+                <% Object.entries(book.other_details).forEach(([key, value]) => { %> <%# Object.entries: converts json into  array %>
+                    <li><%= key %>: <span><%= value %></span></li>
+                <% }) %>
+            </ul>
+            <hr>
+        <% }) %>
+    <% } %>
+
+    <form action="/add" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required>
+        <br>
+
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required>
+        <br>
+
+        <label for="details">Other Details (JSON format):</label>
+        <textarea name="other_details" id="details" rows="4" cols="50" placeholder='{"year": 2024, "genre": "Sci-fi"}' required></textarea>
+        <br>
+
+        <button type="submit">Add Book</button>
+    </form>
+</body>
+</html>

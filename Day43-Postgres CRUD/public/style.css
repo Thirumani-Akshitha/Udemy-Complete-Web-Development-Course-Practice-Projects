@@ -1,0 +1,10 @@
+.data-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.data-list li{
+    margin: 5px 0;
+    font-weight: bold;
+}
