@@ -19,7 +19,7 @@ const pool = new Pool({
 
 app.set("views", path.join(__dirname, "views")); //joins your filepath with views.
 app.set("view engine", "ejs");
-app.use("/static", express.static("static"));
+app.use("/public", express.static("public"));
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
@@ -33,7 +33,7 @@ pool.connect((err, client, release)=>{ //client: connection obj to run querry in
         if(err){
             return console.error("Error in connection", err.stack);
         }
-        console.log("connect to database");
+        console.log("connected to database");
     })
 })
 
@@ -42,6 +42,7 @@ app.get("/", async(req,res)=>{
     res.render("index",{data: data.rows}) //data.rows: array of book records
 })
 
+//to Add book
 app.post("/add", async(req,res)=>{
     const {title, author, other_details} = req.body;
     
@@ -56,6 +57,38 @@ app.post("/add", async(req,res)=>{
     res.status(400).send("Invalid JSON format in 'Other Details'");
   }
 });
+
+app.post("/delete/:id",async(req,res)=>{
+    const {id} = req.params;
+    await pool.query("DELETE FROM book_list WHERE id = $1",[id]);
+    res.redirect("/");
+});
+
+app.get("/edit/:id", async(req,res)=>{
+    const {id}= req.params;
+    const result= await pool.query("SELECT * FROM book_list WHERE id = $1",[id]);
+    res.render("edit", {book: result.rows[0]});
+});
+
+app.post("/edit/:id", async (req, res) => {
+  const { id } = req.params;
+  const { title, author, other_details } = req.body;
+
+  try {
+    const details = JSON.parse(other_details); // convert string to JSON
+
+    await pool.query(
+      "UPDATE book_list SET title = $1, author = $2, other_details = $3 WHERE id = $4",
+      [title, author, details, id]
+    );
+
+    res.redirect("/");
+  } catch (err) {
+    console.error("Error updating book:", err);
+    res.send("Update failed");
+  }
+});
+
 
 
 app.listen(PORT, ()=>{

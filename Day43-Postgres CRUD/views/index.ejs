@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-    <h1>JSON IN POSTGRESQL</h1>
-    <h3>ADD NEW BOOK</h3>
+    <h1>BOOKS YOU WANT</h1>
+    <h3>Awailable books: </h3>
 
     <% if (data.length > 0) { %>
         <% data.forEach(book => { %>
@@ -20,11 +20,17 @@
                     <li><%= key %>: <span><%= value %></span></li>
                 <% }) %>
             </ul>
-            <hr>
+
+        <form action="/delete/<%= book.id %>" method="POST" style="display:inline ">
+        <button type="submit">Delete</button>
+        </form>
+
+        <a href="/edit/<%= book.id %>"><button>Edit</button></a>
+        <hr>
         <% }) %>
     <% } %>
 
-    <form action="/add" method="post">
+    <form action="/add" method="post" class="addBook">
         <label for="title">Title:</label>
         <input type="text" name="title" id="title" required>
         <br>
@@ -39,5 +45,7 @@
 
         <button type="submit">Add Book</button>
     </form>
+
+
 </body>
 </html>

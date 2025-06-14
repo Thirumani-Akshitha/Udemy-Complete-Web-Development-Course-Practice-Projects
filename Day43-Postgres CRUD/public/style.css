@@ -8,3 +8,96 @@
     margin: 5px 0;
     font-weight: bold;
 }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: burlywood;
+  margin-left: 10px;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.main-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-box button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  height: 50px;
+}
+
+.form-box button:hover {
+  background-color: #0056b3;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+button{
+    background-color: rgb(224, 155, 107);
+    width: 80px;
+    height: 25px;
+    margin-top: 4px;
+}
+
+.addBook{
+    background-color: rgb(224, 155, 107);
+    margin: 8px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+   
+}
