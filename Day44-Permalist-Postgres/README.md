@@ -38,13 +38,14 @@ This app demonstrates **CRUD fundamentals** — except the **Update** operation 
    ```bash
    git clone https://github.com/Thirumani-Akshitha/Udemy-Complete-Web-Development-Course-Practice-Projects.git
    cd Day44-Permalist-Postgres
-```
+
 
 2. **Install Dependencies**
 
 ```bash
 
-npm install```
+npm install
+```
 
 3. **Set Up PostgreSQL**
 Create a database (e.g., permalist)
