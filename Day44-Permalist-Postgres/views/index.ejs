@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Permalist</title>
+</head>
+<body>
+  <div class="grid place-items-center min-h-screen bg-slate-400 p-6">
+    <div class="bg-slate-600 w-7/12 shadow-2xl shadow-black rounded-2xl p-6 flex flex-col items-center">
+      <h1 class="text-3xl text-white mb-6">TO-DO List</h1>
+
+      <form action="/add" method="POST" class="flex w-full justify-center gap-2 mb-6">
+        <input
+          type="text"
+          name="addTask"
+          required
+          placeholder="Add a task"
+          class="w-1/2 h-10 bg-slate-100 text-black px-4 rounded"
+        />
+        <button type="submit" class="bg-green-500 mr-1 text-white px-4 py-2 rounded hover:bg-green-600">Add</button>
+      </form>
+
+
+      <ul class="w-full space-y-3">
+        <% tasks.forEach(task => { %>
+          <li class="flex justify-between items-center bg-slate-500 text-white px-4 py-2 rounded">
+            <input type="checkbox" class="w-4 h-4 accent-green-500">
+            <span><%= task.description %></span>
+            <div class="flex gap-2">
+              <form action="/delete/<%= task.id %>" method="post">
+                <button type="submit" class="bg-red-500 px-2 py-1 rounded text-white hover:bg-red-600">Delete</button>
+              </form>
+            </div>
+          </li>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
