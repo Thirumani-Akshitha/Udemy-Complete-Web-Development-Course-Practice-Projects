@@ -48,24 +48,19 @@ npm install
 ```
 
 3. **Set Up PostgreSQL**
-Create a database (e.g., permalist)
+    Create a database (e.g., permalist)
+    Create a table using the following SQL:
 
-Create a table using the following SQL:
-
+```bash
 CREATE TABLE tasks (
   id SERIAL PRIMARY KEY,
   description VARCHAR NOT NULL
 );
+```
 
 4. **Configure .env File**
 Create a .env file in the root folder:
 
-USER=your_postgres_username
-PASSWORD=your_postgres_password
-HOST=localhost
-PORT=5432
-DATABASE=permalist
-DB_DIALECT=postgres
 Replace the values with your actual PostgreSQL config.
 
 **5. Run the Server**
