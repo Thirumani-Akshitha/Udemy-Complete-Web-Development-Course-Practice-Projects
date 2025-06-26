@@ -34,6 +34,22 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
+# Ignore environment variables
+.env
+
+# Ignore macOS system file
+.DS_Store
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore local development files
+*.local
+
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
